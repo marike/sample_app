@@ -2,10 +2,11 @@
 %html
   %head
     %title= title
-    = stylesheet_link_tag 'blueprint/screen', :media => 'screen' 
-    = stylesheet_link_tag 'blueprint/print', :media => 'print'
-    = javascript_include_tag :defaults 
     = csrf_meta_tag  
+    = render 'layouts/stylesheets'
     %body
-
-      = yield
+      .container
+        = render 'layouts/header'
+        %section{:class => "round"}
+          = yield
+        = render 'layouts/footer'
