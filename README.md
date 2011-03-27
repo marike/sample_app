@@ -21,3 +21,54 @@ gem 'haml', '3.0.21'
 gem 'haml-rails', '0.3.1'
 
 * $ bundle install
+Have been using unicorn a lot lately so, while the book uses Webrick, I will use unicorn and run tail in another terminal
+Start unicorn server:
+* $ unicorn_rails
+* $ tail -f log/development.log
+
+
+Spork
+=====
+
+Add gem 'spork' to Gemfile:
+
+* $ bundle install
+* $ spork --bootstrap
+
+Before Spork:
+[ markusarike@macbook ~/Documents/rails3/sample_app ]$ time rspec spec/
+..
+
+Finished in 0.10247 seconds
+2 examples, 0 failures
+
+real	0m9.002s
+user	0m7.588s
+sys	0m1.329s
+
+* $ spork 
+=> Using RSpec
+=> Loading Spork.prefork block...
+=> Spork is ready and listening on 8989!
+
+In another terminal window:
+
+* $ time rspec --drb spec/
+..
+
+Finished in 0.23222 seconds
+2 examples, 0 failures
+
+real	0m6.521s
+user	0m0.858s
+sys	0m0.278s
+
+Add to .rspec file in RAILS_ROOT directory:
+--colour
+--drb
+
+
+
+
+
+
