@@ -67,6 +67,8 @@ Add to .rspec file in RAILS_ROOT directory:
 --colour
 --drb
 
+* Removed spork from testing stack as tests that should pass are failing, unless I restart.  
+
 
 
 
