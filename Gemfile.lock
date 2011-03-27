@@ -47,6 +47,12 @@ GEM
       railties (>= 3.0.0)
     faker (0.3.1)
     gravatar_image_tag (1.0.0)
+    haml (3.0.21)
+    haml-rails (0.3.1)
+      actionpack (~> 3.0.0)
+      activesupport (~> 3.0.0)
+      haml (~> 3.0.18)
+      railties (~> 3.0.0)
     i18n (0.5.0)
     kgio (2.3.3)
     mail (2.2.15)
@@ -119,10 +125,12 @@ DEPENDENCIES
   factory_girl_rails
   faker (= 0.3.1)
   gravatar_image_tag
+  haml (= 3.0.21)
+  haml-rails (= 0.3.1)
   rails (= 3.0.5)
-  rspec
-  rspec-rails
-  spork
+  rspec (= 2.5.0)
+  rspec-rails (= 2.5.0)
+  spork (= 0.8.4)
   sqlite3-ruby
   unicorn
   webrat

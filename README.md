@@ -10,8 +10,14 @@ Chapter 3 - Start a new Rails 3 project
 Create rspec directory:
 ========================================
 * $ rails generate rspec:install
-
 * $ rm public/index.html
-
 * $ git checkout -b static-pages
+* $ rails g controller Pages home contact
 
+
+* forgot to add haml-rails, and haml:
+Add to Gemfile:
+gem 'haml', '3.0.21'
+gem 'haml-rails', '0.3.1'
+
+* $ bundle install
