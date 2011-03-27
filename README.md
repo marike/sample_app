@@ -92,6 +92,17 @@ Integration Tests:
 $ rails g integration_test layout_links
 
 
+Section 5.3 User Signup: A First Step
+------------------------------------
+
+* $ rails g controller Users new
+* $ rm -rf spec/views
+* $ rm -rf spec/helpers
+
+
+
+
+
 
 
 
