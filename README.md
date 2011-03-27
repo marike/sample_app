@@ -79,7 +79,11 @@ $ cp -r ~/Downloads/joshuaclayton-blueprint-css-5d113e9/blueprint public/stylesh
 Skip Ruby review and move to chapter 5
 
 Chapter 5  Filling in the Layout
-=========
+=================================
+
+Implement the erb layout in haml using the convention of naming partials as filename.haml instead of filename.html.haml
+
+Add footer CSS
 
 
 
