@@ -81,6 +81,13 @@ Skip Ruby review and move to chapter 5
 Chapter 5  Filling in the Layout
 =========
 
+* split layout up using partials
+
+Integration Tests:
+
+$ rails g integration_test layout_links
+
+
 
 
 
