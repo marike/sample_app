@@ -69,6 +69,20 @@ Add to .rspec file in RAILS_ROOT directory:
 
 * Removed spork from testing stack as tests that should pass are failing, unless I restart.  
 
+Chapter 4
+========
+
+Add Blueprint CSS framework:
+
+$ cp -r ~/Downloads/joshuaclayton-blueprint-css-5d113e9/blueprint public/stylesheets
+
+Skip Ruby review and move to chapter 5
+
+Chapter 5  Filling in the Layout
+=========
+
+
+
 
 
 
