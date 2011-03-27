@@ -85,6 +85,13 @@ Implement the erb layout in haml using the convention of naming partials as file
 
 Add footer CSS
 
+* split layout up using partials
+
+Integration Tests:
+
+$ rails g integration_test layout_links
+
+
 
 
 
