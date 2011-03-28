@@ -99,6 +99,20 @@ Section 5.3 User Signup: A First Step
 * $ rm -rf spec/views
 * $ rm -rf spec/helpers
 
+Chapter 6 - User Model
+======================
+
+* $ rails g model User name:string email:string
+
+* $ rake db:migrate
+
+Skip bundle install as annotate is already in Gemfile
+
+* $ annotate
+
+* Note: attr_accessible is important for preventing a mass assignment vulnerability, a distressingly common and often serious security hole in many Rails applications.
+
+
 
 
 
