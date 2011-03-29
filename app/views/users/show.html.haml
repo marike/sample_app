@@ -4,6 +4,7 @@
       %h1== #{gravatar_for @user} #{@user.name}
     %td{:class => "sidebar round"}
       %strong== Name #{@user.name}
+      %br
       %strong== URL #{link_to user_path(@user), @user}
       
  
