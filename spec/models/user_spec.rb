@@ -11,6 +11,23 @@ describe User do
       @user = User.create!(@attr)
     end
     
+    describe "authenticate method" do
+      it "should return nil on email/password mismatch" do
+        wrong_password_user = User.authenticate(@attr[:email], "wrongpass")
+        wrong_password_user.should ne_nil
+      end
+      
+      it "should return nil for an email address with no user" do
+        nonexistent_user = User.authenticate("bar@foo.com", @atrr[:password])
+        nonexsitent_user.should new_nil
+      end
+      
+      it "should return the user on email/password match" do
+        match_user = User.authenticate(@attr[:email], @attr[:password])
+        match_user.should == @user        
+      end
+    end
+    
     it "should have an encrypted password attribute" do
       @user.should respond_to(:encrypted_password)
     end
