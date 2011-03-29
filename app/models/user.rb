@@ -9,7 +9,7 @@
 #  created_at :datetime
 #  updated_at :datetime
 #
-
+require 'digest'
 class User < ActiveRecord::Base
   attr_accessor :password, :password_confirmation
   attr_accessible :name, :email, :password, :password_confirmation
@@ -26,12 +26,28 @@ class User < ActiveRecord::Base
                        
   before_save :encrypt_password
   
+  # Return true if the user's password matches the submitted password.
+  def has_password?(submitted_password)
+    # Compare encrypted_password with the encrypted version of
+    # submitted_password 
+    encrypted_password == encrypt(submitted_password)
+  end
+  
   private
     def encrypt_password
+      self.salt = make_salt if new_record?
       self.encrypted_password = encrypt(password)
     end
   
     def encrypt(string)
-      string #stub
+      secure_hash("#{salt}--#{string}")
+    end
+    
+    def make_salt
+      secure_hash("#{Time.now.utc}--#{password}")
+    end
+    
+    def secure_hash(string)
+      Digest::SHA2.hexdigest(string)
     end
 end

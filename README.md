@@ -122,6 +122,37 @@ Section 7.1.3 An Active Record Callback
 ----------------------------------------
 before_save callback
 
+encrypt methods in User model
+
+7.2 - Secure Passwords
+---------------------
+
+* Implement password system with "secure one-way hashing"
+* Authenticating users will involve comparing the encrypted version of a submitted password to the (encrypted) password of a given user. 
+
+see page 254 for password hashing
+
+* $ rails console --sandbox
+>> require 'digest' 
+>> def secure_hash(string) 
+>>   Digest::SHA2.hexdigest(string) 
+>> end
+
+>> password = "secret"
+>> salt = secure_hash("#{Time.now.utc}--#{password}")
+=> "49e59abeeba784cb1543ba51b48c6c6cc19cfb793a8df407ac888a289aa89f31" 
+
+7.2.3 Implementing has_password?
+================================
+
+
+* Add salt column to users table
+
+$ rails generate migration add_salt_to_users salt:string
+
+
+
+
 
 
 
