@@ -113,6 +113,16 @@ Skip bundle install as annotate is already in Gemfile
 * Note: attr_accessible is important for preventing a mass assignment vulnerability, a distressingly common and often serious security hole in many Rails applications.
 
 
+Chapter 7 
+==========
+$  rails generate migration add_password_to_users encrypted_password:string
+
+
+Section 7.1.3 An Active Record Callback
+----------------------------------------
+before_save callback
+
+
 
 
 
