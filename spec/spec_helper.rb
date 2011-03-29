@@ -57,5 +57,4 @@ RSpec.configure do |config|
   ActiveSupport::Dependencies.clear
 end
 
-Spork.each_run do 
-end
+

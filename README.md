@@ -151,6 +151,9 @@ see page 254 for password hashing
 $ rails generate migration add_salt_to_users salt:string
 
 
+7.3 Better User Views
+
+
 
 
 
