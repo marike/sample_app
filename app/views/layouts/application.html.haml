@@ -9,7 +9,7 @@
         = render 'layouts/header'
         %section{:class => "round"}
           - flash.each do |name, msg|
-            = content_tag :div, msg, :class => "#{name}"
+            = content_tag :div, msg, :class => "flash #{name}"
           = yield
         = render 'layouts/footer'
       %center

@@ -156,6 +156,11 @@ $ rails generate migration add_salt_to_users salt:string
 Chapter 8
 ==========
 
+Sign Up User
+
+Integration Tests w/ rspec
+
+* rails generate integration_test users
 
 
 
