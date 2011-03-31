@@ -164,6 +164,17 @@ Integration Tests w/ rspec
 
 * rails generate integration_test users
 
+Chapter 9 Sign In, Sign Out
+============================
+
+* Note: 52 Passing Tests up to now. 
+
+Create Sessions controller with: 
+
+* $ rails generate controller Sessions new 
+* $ rm -rf spec/views
+* $ rm -rf spec/helpers
+
 
 
 

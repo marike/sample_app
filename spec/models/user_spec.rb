@@ -51,8 +51,6 @@ describe User do
   it "should create a new instance given valid attributes" do
     User.create!(@attr)
   end
-  # stub
-  it "should require a name"
   # actual test
   it "should require a name" do
     no_name_user = User.new(@attr.merge(:name => ""))
