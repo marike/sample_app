@@ -175,6 +175,8 @@ Create Sessions controller with:
 * $ rm -rf spec/views
 * $ rm -rf spec/helpers
 
+page 340 ended on to Remember Me
+
 
 
 
