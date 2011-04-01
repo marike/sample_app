@@ -25,7 +25,9 @@ describe SessionsController do
       
       it "should sign in the user in" do
         post :create, :session => @attr
-        # Fill in with tests for a signed-in user/
+        # uses controller variable (which is available inside of Rails tests)
+        controller.current_user.should == @user
+        controller.should be_signed_in
       end
       
       it "should redirect to the user show page" do

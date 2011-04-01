@@ -167,15 +167,22 @@ Integration Tests w/ rspec
 Chapter 9 Sign In, Sign Out
 ============================
 
-* Note: 52 Passing Tests up to now. 
-
 Create Sessions controller with: 
 
 * $ rails generate controller Sessions new 
 * $ rm -rf spec/views
 * $ rm -rf spec/helpers
 
-page 340 ended on to Remember Me
+Sign In and Remember Me
+-----------------------
+
+* include SessionsHelper 
+* use cookies utility supplied by Rails
+
+* Note: 56 Passing Tests up to now. 
+
+9.4 Signing Out
+----------------
 
 
 
