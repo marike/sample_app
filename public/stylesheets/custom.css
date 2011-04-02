@@ -1,5 +1,6 @@
 body {
-	background:#cff;
+/*	background:#cff;*/
+	background:#D6EBFF;
 }
 
 .container {
@@ -93,9 +94,9 @@ a.signup_button {
 }
 
 .shadowed-box {
-	border: 1px solid #d5d5d5;
-	/* -moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.15); */
-	/* -webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.15); */
+/*	border: 1px solid #d5d5d5;*/
+	-moz-box-shadow:0 1px 10px rgba(0, 0, 0, 0.15); 
+	-webkit-box-shadow:0 1px 10px rgba(0, 0, 0, 0.15); 
 }
 
 

@@ -36,6 +36,14 @@ require 'rspec/rails'
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
+
+require "webrat"
+require 'webrat/core/matchers'
+include Webrat::Methods
+
+Webrat.configure do |config|
+  config.mode = :rack
+end
 RSpec.configure do |config|
   
   
