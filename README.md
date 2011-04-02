@@ -179,10 +179,14 @@ Sign In and Remember Me
 * include SessionsHelper 
 * use cookies utility supplied by Rails
 
-* Note: 56 Passing Tests up to now. 
-
 9.4 Signing Out
 ----------------
+
+* Note on tests through chapter 9: 63 examples, 0 failures
+
+Chapter 10 - Updating, Showing, and Deleting Users
+===================================================
+
 
 
 
