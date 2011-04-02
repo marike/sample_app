@@ -189,6 +189,7 @@ Chapter 10 - Updating, Showing, and Deleting Users
 
 * added edit action to app/controllers/users_controller.rb and corresponding app/views/users/edit.html.haml
 * added _error_messages.haml partial to app/views/shared
+* added update action and tests
 
 
 
