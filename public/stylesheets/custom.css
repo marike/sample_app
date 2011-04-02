@@ -83,6 +83,18 @@ a.signup_button {
 	font-size: 150%; 
 	font-weight: bold; 
 	padding: 20px;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.13, #EBB40E),
+	    color-stop(0.68, #FFDB4C)
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    #EBB40E 13%,
+	    #FFDB4C 68%
+	);
 }
 
 /* Round corners */
