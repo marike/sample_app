@@ -187,6 +187,9 @@ Sign In and Remember Me
 Chapter 10 - Updating, Showing, and Deleting Users
 ===================================================
 
+* added edit action to app/controllers/users_controller.rb and corresponding app/views/users/edit.html.haml
+* added _error_messages.haml partial to app/views/shared
+
 
 
 
