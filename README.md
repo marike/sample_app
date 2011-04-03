@@ -191,6 +191,15 @@ Chapter 10 - Updating, Showing, and Deleting Users
 * added _error_messages.haml partial to app/views/shared
 * added update action and tests
 
+10.2.3 Friendly Forwarding
+
+rails generate integration_test friendly_forwarding
+
+
+
+
+
+
 
 
 
