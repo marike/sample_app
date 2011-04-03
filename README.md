@@ -195,6 +195,10 @@ Chapter 10 - Updating, Showing, and Deleting Users
 
 rails generate integration_test friendly_forwarding
 
+10.3	Showing Users
+
+page 384
+
 
 
 
