@@ -197,7 +197,9 @@ rails generate integration_test friendly_forwarding
 
 10.3	Showing Users
 
-page 384
+* Add index action to UsersController
+* Use faker gem and write rake task to fill development database with sample "fake" users 
+* Use rake -T to see if new task, rake db:populate shows up
 
 
 
