@@ -4,8 +4,8 @@ namespace :db do
   desc "Fill the database with sample data"
   task :populate => :environment do
     Rake::Task['db:reset'].invoke
-    USer.create!(:name => "Example User",
-                 :email => "example@railstutorial@org",
+    User.create!(:name => "Example User",
+                 :email => "example@railstutorial.org",
                  :password => "foobar",
                  :password_confirmation => "foobar")
     99.times do |n|

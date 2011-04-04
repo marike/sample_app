@@ -201,6 +201,17 @@ rails generate integration_test friendly_forwarding
 * Use faker gem and write rake task to fill development database with sample "fake" users 
 * Use rake -T to see if new task, rake db:populate shows up
 
+$ rake db:populate
+
+$ tail -f log/development.log
+ User Load (0.3ms)  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('example-55@railstutorial.org')) LIMIT 1
+ AREL (0.3ms)  INSERT INTO "users" ("name", "email", "created_at", "updated_at", "encrypted_password", "salt") VALUES ('Finn Medhurst', 'example-55@railstutorial.org', '2011-04-04 19:16:43.307659', '2011-04-04 19:16:43.307659', '846b773830f660d48b75f86406d409201a3670fdbccf6120dcb47dafda0431bc', '8bd4bcaa2c61329f582f057104ccd644228c094a34543ab60726a58a359f8a4d')
+
+etc.  
+creates 100 users with help of faker gem
+
+stopped at p. 398 Partial Refactoring
+
 
 
 

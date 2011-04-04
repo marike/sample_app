@@ -4,7 +4,7 @@ gem 'rails', '3.0.5'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'gravatar_image_tag'
-gem 'will_paginate'
+gem 'will_paginate', '3.0.pre2'
 gem 'haml', '3.0.21'
 gem 'haml-rails', '0.3.1'
 
