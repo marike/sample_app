@@ -210,7 +210,9 @@ $ tail -f log/development.log
 etc.  
 creates 100 users with help of faker gem
 
-stopped at p. 398 Partial Refactoring
+Migration file
+
+rails generate migration add_admin_to_users admin:boolean
 
 
 
