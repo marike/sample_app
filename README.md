@@ -214,6 +214,12 @@ Migration file
 
 rails generate migration add_admin_to_users admin:boolean
 
+End of chapter 10
+TODO: 
+two failing tests?  why? 
+
+
+
 
 
 
