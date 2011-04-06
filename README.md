@@ -210,13 +210,20 @@ $ tail -f log/development.log
 etc.  
 creates 100 users with help of faker gem
 
-Migration file
-
 rails generate migration add_admin_to_users admin:boolean
 
-End of chapter 10
-TODO: 
-two failing tests?  why? 
+* git merge updating-users
+
+Completed end of chapter exercises
+
+Chapter 11  User Microposts
+===========================
+
+Micropost
+
+rails generate model Micropost content:string user_id:integer
+
+
 
 
 

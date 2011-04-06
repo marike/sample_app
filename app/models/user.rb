@@ -1,14 +1,18 @@
 # == Schema Information
-# Schema version: 20110327234205
+# Schema version: 20110406160250
 #
 # Table name: users
 #
-#  id         :integer         not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id                 :integer         not null, primary key
+#  name               :string(255)
+#  email              :string(255)
+#  created_at         :datetime
+#  updated_at         :datetime
+#  encrypted_password :string(255)
+#  salt               :string(255)
+#  admin              :boolean
 #
+
 require 'digest'
 class User < ActiveRecord::Base
   attr_accessor :password
@@ -26,6 +30,8 @@ class User < ActiveRecord::Base
                        :length       => { :within => 6..40 }
                        
   before_save :encrypt_password
+  
+  has_many :microposts, :dependent => :destroy
   
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
