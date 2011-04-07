@@ -223,6 +223,10 @@ Micropost
 
 rails generate model Micropost content:string user_id:integer
 
+Generate Integration Tests
+
+rails generate integration_test microposts
+
 
 
 
