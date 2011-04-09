@@ -5,7 +5,7 @@ module MicropostsHelper
   end
   
   private
-    def wrap_long_string(text, mix_width = 30)
+    def wrap_long_string(text, max_width = 30)
       zero_width_space = "&#8023;"
       regex = /.{1,#{max_width}}/
       (text.length < max_width) ? text : text.scan(regex).join(zero_width_space)
