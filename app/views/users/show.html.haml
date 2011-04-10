@@ -2,6 +2,7 @@
   %tr
     %td{:class => "main"}
       %h1== #{gravatar_for @user} #{@user.name}
+      = render 'follow_form' if signed_in?
 
       - unless @user.microposts.empty?
         %table{:class => "microposts", :summary => "User microposts"}
@@ -14,6 +15,9 @@
       %strong== URL #{link_to user_path(@user), @user}
       %br
       %strong== Microposts #{@user.microposts.count}
+      = render 'shared/stats'
+
+
       
  
 
