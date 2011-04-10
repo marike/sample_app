@@ -227,6 +227,12 @@ Generate Integration Tests
 
 rails generate integration_test microposts
 
+Chapter 12
+===========
+
+Implement has_many :following, :through => "relationships"
+
+rails generate model Relationship follower_id:integer followed_id:integer
 
 
 

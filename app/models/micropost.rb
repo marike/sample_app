@@ -1,6 +1,3 @@
-# == Schema Information
-# Schema version: 20110406160250
-#
 # Table name: microposts
 #
 #  id         :integer         not null, primary key
