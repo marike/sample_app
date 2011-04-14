@@ -234,7 +234,7 @@ Implement has_many :following, :through => "relationships"
 
 rails generate model Relationship follower_id:integer followed_id:integer
 
-Implemented the status feed
+Implemented the status feed and 152 tests all are passing
 
 
 
