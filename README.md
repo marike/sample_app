@@ -234,15 +234,7 @@ Implement has_many :following, :through => "relationships"
 
 rails generate model Relationship follower_id:integer followed_id:integer
 
-page 497 stopped on
-
-must created app/views/users/show_follow.html.haml
-
-
-
-
-
-
+Implemented the status feed
 
 
 
